@@ -6,11 +6,11 @@ try:
     else:
         print("int")
 except:
-    if '[' in x:
+    if x[0]==x[-1] in x:
         print("list")
-    elif '('in x:
+    elif x[0]==x[-1]in x:
         print("tuple")
-    elif '{' in x:
+    elif x[0]==x[-1] in x:
         if ':' in x:
             print("dic")
         else:
